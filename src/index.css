@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #050505;
+    color: #f4f4f5;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  code, kbd, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2d32;
+}
+
+/* =========================================================
+   Light Mode Clean Enterprise ERP Theme Overrides
+   ========================================================= */
+
+html.light body {
+  background-color: #f8fafc !important; /* Clean Slate 50 canvas */
+  color: #0f172a !important;            /* Slate 900 text */
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+/* Canvas backgrounds */
+html.light .bg-black {
+  background-color: #f8fafc !important;
+}
+
+/* Outer Card Containers -> Pure Crisp White with crisp border & soft shadow */
+html.light .bg-zinc-900 {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.06);
+}
+
+html.light .bg-zinc-900\/90,
+html.light .bg-zinc-900\/80,
+html.light .bg-zinc-900\/60 {
+  background-color: #ffffff !important;
+}
+
+/* Inner Items, Inset Panels, Inactive Buttons -> Slate 100/50 */
+html.light .bg-zinc-950 {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-zinc-950\/80,
+html.light .bg-zinc-950\/60 {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+}
+
+html.light .bg-zinc-800 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-zinc-800\/50 {
+  background-color: rgba(241, 245, 249, 0.7) !important;
+}
+
+/* Borders -> Light Slate 200 */
+html.light .border-zinc-800,
+html.light .border-zinc-800\/80,
+html.light .border-zinc-800\/90,
+html.light .border-zinc-800\/60 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .border-zinc-700 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Typography Hierarchy in Light Mode */
+html.light h1, 
+html.light h2, 
+html.light h3, 
+html.light h4, 
+html.light h5, 
+html.light h6 {
+  color: #0f172a !important;
+}
+
+/* General Zinc Text Tokens in Light Mode */
+html.light .text-zinc-100 {
+  color: #0f172a !important;
+}
+
+html.light .text-zinc-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-zinc-300 {
+  color: #334155 !important;
+}
+
+html.light .text-zinc-400 {
+  color: #475569 !important;
+}
+
+html.light .text-zinc-500 {
+  color: #64748b !important;
+}
+
+/* Protect Gradient Text Clips */
+html.light .text-transparent {
+  color: transparent !important;
+}
+
+/* STRICT RULE: Always keep text and icons pure white on filled indigo / emerald / rose / dark buttons or active tabs! */
+html.light .bg-indigo-600,
+html.light .bg-indigo-600 *,
+html.light .bg-indigo-500,
+html.light .bg-indigo-500 *,
+html.light .bg-emerald-600,
+html.light .bg-emerald-600 *,
+html.light .bg-rose-600,
+html.light .bg-rose-600 *,
+html.light .bg-violet-600,
+html.light .bg-violet-600 * {
+  color: #ffffff !important;
+}
+
+/* Form controls */
+html.light input, 
+html.light select, 
+html.light textarea {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Accent Badges High Contrast in Light Mode */
+html.light .text-indigo-400 {
+  color: #4f46e5 !important;
+}
+html.light .text-emerald-400 {
+  color: #059669 !important;
+}
+html.light .text-amber-400 {
+  color: #d97706 !important;
+}
+html.light .text-rose-400 {
+  color: #e11d48 !important;
+}
+html.light .text-violet-400 {
+  color: #7c3aed !important;
+}
+
+html.light .bg-indigo-500\/10 {
+  background-color: rgba(99, 102, 241, 0.12) !important;
+}
+html.light .bg-emerald-500\/10 {
+  background-color: rgba(16, 185, 129, 0.12) !important;
+}
+html.light .bg-amber-500\/10 {
+  background-color: rgba(245, 158, 11, 0.12) !important;
+}
+html.light .bg-rose-500\/10 {
+  background-color: rgba(244, 63, 94, 0.12) !important;
+}

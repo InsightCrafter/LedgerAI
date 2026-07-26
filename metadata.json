@@ -1,0 +1,8 @@
+{
+  "name": "LedgerAI - Enterprise SaaS ERP",
+  "description": "Commercial AI-Native Autonomous Accounting & ERP SaaS Engine with Multi-Tenant Workspaces, Subscription Tier Management, Document OCR AI, GST Returns Engine, and Autonomous Agent Swarm.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
